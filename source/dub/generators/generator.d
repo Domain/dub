@@ -183,8 +183,8 @@ class ProjectGenerator
 			} else {
 				if (tt == TargetType.autodetect || tt == TargetType.library) tt = genSettings.combined ? TargetType.sourceLibrary : TargetType.staticLibrary;
 				else if (tt == TargetType.dynamicLibrary) {
-					logWarn("Dynamic libraries are not yet supported as dependencies - building as static library.");
-					tt = TargetType.staticLibrary;
+					//logWarn("Dynamic libraries are not yet supported as dependencies - building as static library.");
+					//tt = TargetType.staticLibrary;
 				}
 			}
 			if (tt != TargetType.none && tt != TargetType.sourceLibrary && ti.buildSettings.sourceFiles.empty) {
